@@ -61,8 +61,8 @@ def get_current_num(choice, past_num, p1_num, p2_num):
 def main(): 
     # Get the starting integer "N"
     N = int(input("Starting number 'N'?: "))
-    while N <= 0: 
-        print("Must be a positive integer")
+    while N <= 1: 
+        print("Must be a positive integer or not 1")
         N = int(input("Starting number 'N'?: "))
     all_num.append(N) 
 
