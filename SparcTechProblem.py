@@ -41,13 +41,13 @@ def get_current_num(choice, past_num, p1_num, p2_num):
         
         # Code to check if number is a positive factor of P1's most recently written number
         if which_player == 1: 
-            if current_num % past_num == 0 and p1_num % current_num == 0: 
+            if current_num % past_num == 0 and p2_num % current_num == 0: 
                 print("That number augments. Next player's turn.")
             else: 
                 print("That number does not augment. Try again")
                 return get_current_num(choice, past_num, p1_num, p2_num)
         elif which_player == 2:
-            if current_num % past_num == 0 and p2_num % current_num == 0: 
+            if current_num % past_num == 0 and p1_num % current_num == 0: 
                 print("That number augments. Next player's turn.")
             else: 
                 print("That number does not augment. Try again")
